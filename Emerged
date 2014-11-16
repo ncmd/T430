@@ -1,16 +1,38 @@
-#Emerged Stuff
+#Emerged/Installed Stuff
+
+#first install
+gentoo-sources
 app-misc/screen
-(buggy)net-misc/dhcpcd
-sys-apps/iproute2
-www-client/firefox
-x11-terms/sakura
-sudo
-slock
 app-portage/gentoolkit
-x11-base/xorg-server
+sys-apps/iproute2
+(buggy unmerged)net-misc/dhcpcd
+sys-process/vixie-cron
+app-admin/syslog-ng
 sys-boot/grub:2
-www-client/google-chrome
+
+#after first reboot
+x11-base/xorg-server
+x11-wm/dwm
+x11-terms/sakura
+www-client/firefox
 www-plugins/adobe-flash
+www-client/google-chrome
+
+
+
+app-admin/sudo
+
+emerge net-wireless/wpa_supplicant
+
+net-wireless/wireless-tools
+ 
+ 
+
+x11-misc/slock
+
+
+
+
 
 
 
