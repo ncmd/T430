@@ -1,0 +1,4 @@
+#dir = /etc/conf.d/xdm
+
+CHECKVT=7
+DISPLAYMANAGER="dwm"
