@@ -1,0 +1,18 @@
+#Emerged Stuff
+app-misc/screen
+(buggy)net-misc/dhcpcd
+sys-apps/iproute2
+www-client/firefox
+x11-terms/sakura
+sudo
+slock
+app-portage/gentoolkit
+x11-base/xorg-server
+sys-boot/grub:2
+www-client/google-chrome
+www-plugins/adobe-flash
+
+
+
+#External downloaded
+
