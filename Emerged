@@ -18,15 +18,16 @@ x11-wm/dwm
 x11-terms/sakura
 www-client/firefox
 www-plugins/adobe-flash
-www-client/google-chrome
-
-
+www-client/chromium
 
 app-admin/sudo
+net-wireless/wpa_supplicant (initialize driver & dhcp)
+net-misc/wicd (network manager)
 
-emerge net-wireless/wpa_supplicant
-
-net-wireless/wireless-tools
+ 
+ 
+ net-analyzer/nmap
+ net-firewall/iptables (port manager)
  
  
 
