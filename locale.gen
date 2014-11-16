@@ -1,0 +1,6 @@
+#dir = /etc/locale-gen
+#eselect locale list (check)
+#eselect locale set 1 (for firefox)
+#/etc/profile (for update)
+
+en_US.UTF-8 UTF-8
