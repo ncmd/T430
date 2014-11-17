@@ -4,9 +4,10 @@
 
 #first install
 gentoo-sources (kernel)
+sys-kernel/genkernel (general kernel)
 app-misc/screen (multi sessions)
 app-portage/gentoolkit (euse)
-sys-apps/iproute2 (ip link)
+sys-apps/iproute2 (ip link app)
 (buggy unmerged)net-misc/dhcpcd (need for wicd)
 sys-process/vixie-cron (scheduled task)
 app-admin/syslog-ng (syslogs)
@@ -16,14 +17,16 @@ sys-boot/grub:2 (boot)
 x11-base/xorg-server (startx)
 x11-wm/dwm (windows manager)
 x11-terms/sakura (terminal)
-www-client/firefox
+www-client/firefox (web browser)
 www-plugins/adobe-flash
 www-plugins/nspluginwrapper (plugin initializer)
-www-client/chromium
+www-client/chromium (web browser)
 
 app-admin/sudo (user root privileges)
 net-wireless/wpa_supplicant (initialize driver & dhcp)
 net-misc/wicd (network manager)
+
+net-firewall/iptables (port manager)
 
 app-misc/ranger (file manager)
 net-misc/rdesktop (window remote desktop app)
@@ -32,7 +35,7 @@ net-misc/openvpn (vpn app)
  
 dev-vcs/git
 net-analyzer/nmap
-net-firewall/iptables (port manager)
+
  
  
 
