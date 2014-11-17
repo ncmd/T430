@@ -126,5 +126,5 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
 
-Displaying DWMconfig.h.
+
 
