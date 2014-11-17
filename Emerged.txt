@@ -3,14 +3,14 @@
 #https://wiki.archlinux.org/index.php/List_of_applications
 
 #first install
-gentoo-sources
-app-misc/screen
-app-portage/gentoolkit
-sys-apps/iproute2
-(buggy unmerged)net-misc/dhcpcd
-sys-process/vixie-cron
-app-admin/syslog-ng
-sys-boot/grub:2
+gentoo-sources (kernel)
+app-misc/screen (multi sessions)
+app-portage/gentoolkit (euse)
+sys-apps/iproute2 (ip link)
+(buggy unmerged)net-misc/dhcpcd (need for wicd)
+sys-process/vixie-cron (scheduled task)
+app-admin/syslog-ng (syslogs)
+sys-boot/grub:2 (boot)
 
 #after first reboot
 x11-base/xorg-server (startx)
