@@ -27,8 +27,9 @@ net-misc/wicd (network manager)
 app-misc/ranger (file manager)
  
  
- net-analyzer/nmap
- net-firewall/iptables (port manager)
+dev-vcs/git
+net-analyzer/nmap
+net-firewall/iptables (port manager)
  
  
 
