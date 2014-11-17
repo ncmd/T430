@@ -3,39 +3,40 @@
 #https://wiki.archlinux.org/index.php/List_of_applications
 
 #first install
-gentoo-sources (kernel)
-sys-kernel/genkernel (general kernel)
-app-misc/screen (multi sessions)
-app-portage/gentoolkit (euse)
-sys-apps/iproute2 (ip link)
-(buggy unmerged)net-misc/dhcpcd (need for wicd)
-sys-process/vixie-cron (scheduled task)
-app-admin/syslog-ng (syslogs)
-sys-boot/grub:2 (boot)
+gentoo-sources              				(kernel)
+sys-kernel/genkernel					(general kernel)
+app-misc/screen 					(multi sessions)
+app-portage/gentoolkit 					(euse)
+sys-apps/iproute2 					(ip link)
+(buggy unmerged)net-misc/dhcpcd 			(need for wicd)
+sys-process/vixie-cron 					(scheduled task)
+app-admin/syslog-ng 					(syslogs)
+sys-boot/grub:2 					(boot)
 
 #after first reboot
-x11-base/xorg-server (startx)
-x11-wm/dwm (windows manager)
-x11-terms/sakura (terminal)
-www-client/firefox (web browser)
+x11-base/xorg-server 					(startx)
+x11-wm/dwm 						(windows manager)
+x11-terms/sakura 					(terminal)
+www-client/firefox 					(web browser)
 www-plugins/adobe-flash
-www-plugins/nspluginwrapper (plugin initializer)
-www-client/chromium (web browser)
+www-plugins/nspluginwrapper 				(plugin initializer)
+www-client/chromium 					(web browser)
 
-app-admin/sudo (user root privileges)
-net-wireless/wpa_supplicant (initialize driver & dhcp)
-net-misc/wicd (network manager)
+app-admin/sudo 						(user root privileges)
+net-wireless/wpa_supplicant 				(initialize driver & dhcp)
+net-misc/wicd 						(network manager)
 
-net-firewall/iptables (port manager)
+net-firewall/iptables 					(port manager)
 
-app-misc/ranger (file manager)
-net-misc/rdesktop (window remote desktop app)
-net-misc/openvpn (vpn app)
+app-misc/ranger 					(file manager)
+net-misc/rdesktop 					(window remote desktop app)
+net-misc/openvpn 					(vpn app)
 
 apache
 nginx
 monitorix
- 
+java
+
 dev-vcs/git
 net-analyzer/nmap
 x11-misc/slock
