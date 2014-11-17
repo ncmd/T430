@@ -1,0 +1,3 @@
+# Dir = /etc/sudoers
+# "Replace _usernamehere_" with username
+Defaults:_usernamehere_ runaspw, passwd_tries=5
