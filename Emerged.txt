@@ -13,19 +13,22 @@ app-admin/syslog-ng
 sys-boot/grub:2
 
 #after first reboot
-x11-base/xorg-server
-x11-wm/dwm
-x11-terms/sakura
+x11-base/xorg-server (startx)
+x11-wm/dwm (windows manager)
+x11-terms/sakura (terminal)
 www-client/firefox
 www-plugins/adobe-flash
+www-plugins/nspluginwrapper (plugin initializer)
 www-client/chromium
 
-app-admin/sudo
+app-admin/sudo (user root privileges)
 net-wireless/wpa_supplicant (initialize driver & dhcp)
 net-misc/wicd (network manager)
 
 app-misc/ranger (file manager)
- 
+net-misc/rdesktop (window remote desktop app)
+net-misc/openvpn (vpn app)
+
  
 dev-vcs/git
 net-analyzer/nmap
