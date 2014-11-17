@@ -1,4 +1,4 @@
-#dir =  ~/.xinitrc
+# Dir =  ~/.xinitrc
 #!/bin/sh
 #
 #
