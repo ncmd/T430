@@ -24,6 +24,7 @@ app-admin/sudo
 net-wireless/wpa_supplicant (initialize driver & dhcp)
 net-misc/wicd (network manager)
 
+app-misc/ranger (file manager)
  
  
  net-analyzer/nmap
