@@ -2,44 +2,48 @@
 #List of applications
 #https://wiki.archlinux.org/index.php/List_of_applications
 
-#first install
-gentoo-sources              				(kernel)
-sys-kernel/genkernel					(general kernel)
-app-misc/screen 					(multi sessions)
-app-portage/gentoolkit 					(euse)
-sys-apps/iproute2 					(ip link)
-(buggy unmerged)net-misc/dhcpcd 			(need for wicd)
-sys-process/vixie-cron 					(scheduled task)
-app-admin/syslog-ng 					(syslogs)
-sys-boot/grub:2 					(boot)
+#First Install			Installed?	Configured?	What?
+gentoo-sources              	yes		auto		(kernel)
+sys-kernel/genkernel		yes		auto		(general kernel)
+app-misc/screen 		yes		auto		(multi sessions)
+app-portage/gentoolkit 		yes		auto		(euse)
+sys-apps/iproute2 		yes		auto		(ip link)
+net-misc/dhcpcd 		yes		yes		(need for wicd)
+sys-process/vixie-cron 		yes		auto		(scheduled task)
+app-admin/syslog-ng 		yes		auto		(syslogs)
+sys-boot/grub:2 		yes		auto		(boot)
 
-#after first reboot
-x11-base/xorg-server 					(startx)
-x11-wm/dwm 						(windows manager)
-x11-terms/sakura 					(terminal)
-www-client/firefox 					(web browser)
-www-plugins/adobe-flash
-www-plugins/nspluginwrapper 				(plugin initializer)
-www-client/chromium 					(web browser)
+#Installed 			Installed?	Configured?	What?
+x11-base/xorg-server 		yes		yes		(startx)
+x11-wm/dwm 			yes		yes		(windows manager)
+x11-terms/sakura 		yes		auto		(terminal)
+www-client/firefox 		yes		auto		(web browser)
+www-plugins/adobe-flash		yes		auto
+www-plugins/nspluginwrapper 	yes		auto		(plugin initializer)
+www-client/chromium 		yes		auto		(web browser)
 
-app-admin/sudo 						(user root privileges)
-net-wireless/wpa_supplicant 				(initialize driver & dhcp)
-net-misc/wicd 						(network manager)
+app-admin/sudo 			yes		yes		(user root privileges)
+net-wireless/wpa_supplicant 	yes		yes		(initialize driver & dhcp)
+net-misc/wicd 			yes		yes		(network manager)
 
-net-firewall/iptables 					(port manager)
+net-firewall/iptables 		yes		yes		(port manager)
 
-app-misc/ranger 					(file manager)
-net-misc/rdesktop 					(window remote desktop app)
-net-misc/openvpn 					(vpn app)
+app-misc/ranger 		yes		auto		(file manager)
+net-misc/rdesktop 		yes		auto		(window remote desktop app)
+net-misc/openvpn 		yes		no		(vpn app)
 
-apache
-nginx
-monitorix
-java
+net-irc/irssi			yes		no		(chat)
+apache				yes		no		(webserver)
+nginx				yes		no		(system monitor)
+monitorix			yes		auto		(system monitor)
+java				no		no
 
-dev-vcs/git
-net-analyzer/nmap
-x11-misc/slock
+dev-vcs/git			yes		no		(archive)
+net-analyzer/nmap		yes		no		(net scan)
+x11-misc/slock			no		no		(lock)
+
+netbeans			no		
+thunderbird			yes
 
 #External downloaded
 neovim ebuild
