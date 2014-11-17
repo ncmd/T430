@@ -1,47 +1,51 @@
-#Emerged/Installed Stuff
-#List of applications
-#https://wiki.archlinux.org/index.php/List_of_applications
+# Emerged/Installed Stuff
+# List of applications
+# https://wiki.archlinux.org/index.php/List_of_applications
 
-#First Install			Installed?	Configured?	What?
-gentoo-sources              	yes		auto		(kernel)
-sys-kernel/genkernel		yes		auto		(general kernel)
-app-misc/screen 		yes		auto		(multi sessions)
-app-portage/gentoolkit 		yes		auto		(euse)
-sys-apps/iproute2 		yes		auto		(ip link)
-net-misc/dhcpcd 		yes		yes		(need for wicd)
-sys-process/vixie-cron 		yes		auto		(scheduled task)
-app-admin/syslog-ng 		yes		auto		(syslogs)
-sys-boot/grub:2 		yes		auto		(boot)
+# First Emerge Install		Installed?	Configured?	What?                   Forked?
+gentoo-sources              	yes		auto		(kernel)                NA
+sys-kernel/genkernel		yes		auto		(general kernel)        NA
+app-misc/screen 		yes		auto		(multi sessions)        NA
+app-portage/gentoolkit 		yes		auto		(euse)                  NA
+sys-apps/iproute2 		yes		auto		(ip link)               NA
+sys-process/vixie-cron 		yes		auto		(scheduled task)        NA
+app-admin/syslog-ng 		yes		auto		(syslogs)               NA
+sys-boot/grub:2 		yes		auto		(boot)                  no
 
-#Installed 			Installed?	Configured?	What?
-x11-base/xorg-server 		yes		yes		(startx)
-x11-wm/dwm 			yes		yes		(windows manager)
-x11-terms/sakura 		yes		auto		(terminal)
-www-client/firefox 		yes		auto		(web browser)
-www-plugins/adobe-flash		yes		auto
-www-plugins/nspluginwrapper 	yes		auto		(plugin initializer)
-www-client/chromium 		yes		auto		(web browser)
+# Required                       Installed?	Configured?	What?                   Forked?
+net-firewall/iptables 		yes		yes		(port manager)          no
+app-admin/sudo 			yes		yes		(user root privileges)  yes
+net-misc/dhcpcd 		yes		yes		(need for wicd)         no
+net-wireless/wpa_supplicant 	yes		yes		(initialize driver)     yes
+net-misc/wicd 			yes		yes		(network manager)       no
 
-app-admin/sudo 			yes		yes		(user root privileges)
-net-wireless/wpa_supplicant 	yes		yes		(initialize driver & dhcp)
-net-misc/wicd 			yes		yes		(network manager)
 
-net-firewall/iptables 		yes		yes		(port manager)
+# Customized 			Installed?	Configured?	What?                   Forked?
+x11-base/xorg-server 		yes		yes		(startx)                no
+x11-wm/dwm 			yes		yes		(windows manager)       yes
+x11-terms/sakura 		yes		auto		(terminal)              no
+www-client/firefox 		yes		auto		(web browser)           NA
+www-plugins/adobe-flash		yes		auto                                    NA
+www-plugins/nspluginwrapper 	yes		auto		(plugin initializer)    NA
+www-client/chromium 		yes		auto		(web browser)           NA
 
-app-misc/ranger 		yes		auto		(file manager)
-net-misc/rdesktop 		yes		auto		(window remote desktop app)
-net-misc/openvpn 		yes		no		(vpn app)
 
-net-irc/irssi			yes		no		(chat)
-apache				yes		no		(webserver)
-nginx				yes		no		(system monitor)
-monitorix			yes		auto		(system monitor)
+# Customized 			Installed?	Configured?	What?                   Forked?
+app-misc/ranger 		yes		auto		(file manager)          no
+net-misc/rdesktop 		yes		auto		(win remote desktop)    NA
+net-misc/openvpn 		yes		no		(vpn app)               no
+
+net-irc/irssi			yes		no		(chat)                  no
+apache				yes		no		(webserver)             no
+nginx				yes		no		(system monitor)        no
+monitorix			yes		auto		(system monitor)        NA
 java				no		no
 
-dev-vcs/git			yes		no		(archive)
-net-analyzer/nmap		yes		no		(net scan)
-x11-misc/slock			no		no		(lock)
+dev-vcs/git			yes		no		(archive)               no
+net-analyzer/nmap		yes		no		(net scan)              NA
+x11-misc/slock			no		no		(lock)                  no
 
+libreoffice                     no
 netbeans			no		
 thunderbird			yes
 
