@@ -35,11 +35,18 @@ app-misc/ranger 		yes		auto		(file manager)          no
 net-misc/rdesktop 		yes		auto		(win remote desktop)    NA
 net-misc/openvpn 		yes		no		(vpn app)               no
 
+teamviewer9                     yes             auto            (remote)
 net-irc/irssi			yes		no		(chat)                  no
+hexchat                         yes             yes             (chat)                  NA
 apache				yes		no		(webserver)             no
 nginx				yes		no		(system monitor)        no
 monitorix			yes		auto		(system monitor)        NA
 java				no		no
+autofs
+wireshark
+(pdfviewer)
+(notepad)
+
 
 dev-vcs/git			yes		no		(archive)               no
 net-analyzer/nmap		yes		no		(net scan)              NA
@@ -48,6 +55,8 @@ x11-misc/slock			no		no		(lock)                  no
 libreoffice                     no
 netbeans			no		
 thunderbird			yes
+
+
 
 #External downloaded
 neovim ebuild
