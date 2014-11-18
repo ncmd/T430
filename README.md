@@ -1,4 +1,6 @@
 T430
 ====
 
-LenovoThinkpadT430Setup
+LenovoThinkpadT430RicedSetup
+
+
