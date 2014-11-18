@@ -1,0 +1,3 @@
+# Dir = /etc/default/grub
+
+GRUB_CMDLINE_LINUX="acpi_osi=\"!Windows 2012\""
