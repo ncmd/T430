@@ -1,0 +1,11 @@
+# Commands 
+
+# For Dwm
+# [Command]		What?		Stable?		Notes
+ctrl+mod+q		quit		yes
+
+
+# Teamviewer
+teamviewer9		remote		no
+
+
