@@ -28,7 +28,7 @@ www-client/firefox 		yes		auto		(web browser)           NA
 www-plugins/adobe-flash		yes		auto                                    NA
 www-plugins/nspluginwrapper 	yes		auto		(plugin initializer)    NA
 www-client/chromium 		yes		auto		(web browser)           NA
-
+sshd
 
 # Customized 			Installed?	Configured?	What?                   Forked?
 app-misc/ranger 		yes		auto		(file manager)          no
@@ -44,8 +44,11 @@ monitorix			yes		auto		(system monitor)        NA
 java				no		no
 autofs
 wireshark
-(pdfviewer)
+(pdf viewer)
 (notepad)
+openssl (ssl)
+(image viewer)
+
 
 
 dev-vcs/git			yes		no		(archive)               no
