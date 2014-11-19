@@ -53,6 +53,7 @@ openssl (ssl)
 (image viewer)
 logmein
 vnc(remote)
+unrar
 
 
 dev-vcs/git			yes		no		(archive)               no
