@@ -62,6 +62,14 @@ openssl (ssl)
 logmein
 vnc(remote)
 unrar
+hotot
+dolphin
+xscreensaver
+tint2
+nload
+redshift
+xbacklight
+conky
 
 
 dev-vcs/git			yes		no		(archive)               no
