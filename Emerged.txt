@@ -22,6 +22,7 @@ net-wireless/wpa_supplicant 	yes		yes		(initialize driver)     yes
 net-misc/wicd 			yes		yes		(network manager)       no
 slim
 snort
+aide
 
 # Customized 			Installed?	Configured?	What?                   Forked?
 x11-base/xorg-server 		yes		yes		(startx)                no
