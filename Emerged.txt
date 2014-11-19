@@ -23,6 +23,7 @@ net-wireless/wpa_supplicant 	yes		yes		(initialize driver)     yes
 net-misc/wicd 			yes		yes		(network manager)       no
 slim
 snort
+splunk
 aide
 ipset
 keychain
@@ -79,6 +80,8 @@ x11-misc/slock			no		no		(lock)                  no
 libreoffice                     no
 netbeans			no		
 thunderbird			yes
+
+
 
 
 
