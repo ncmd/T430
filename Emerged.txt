@@ -14,6 +14,7 @@ sys-boot/grub:2 		yes		auto		(boot)                  no
 
 # Required                       Installed?	Configured?	What?                   Forked?
 net-firewall/iptables 		yes		yes		(port manager)          no
+nftables
 ufw
 app-admin/sudo 			yes		yes		(user root privileges)  yes
 net-misc/dhcpcd 		yes		yes		(need for wicd)         no
