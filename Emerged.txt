@@ -21,6 +21,7 @@ net-misc/dhcpcd 		yes		yes		(need for wicd)         no
 net-wireless/wpa_supplicant 	yes		yes		(initialize driver)     yes
 net-misc/wicd 			yes		yes		(network manager)       no
 slim
+snort
 
 # Customized 			Installed?	Configured?	What?                   Forked?
 x11-base/xorg-server 		yes		yes		(startx)                no
