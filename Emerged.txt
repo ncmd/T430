@@ -48,11 +48,12 @@ teamviewer9                     yes             auto            (remote)
 net-irc/irssi			yes		no		(chat)                  no
 hexchat                         yes             yes             (chat)                  NA
 apache				yes		no		(webserver)             no
-nginx				yes		no		(system monitor)        no
+nginx				yes		no		(http server)        no
 php
 roundcube
 mariadb
 monitorix			yes		auto		(system monitor)        NA
+nagios
 java				no		no
 autofs
 wireshark
