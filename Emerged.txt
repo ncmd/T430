@@ -18,7 +18,7 @@ app-admin/sudo 			yes		yes		(user root privileges)  yes
 net-misc/dhcpcd 		yes		yes		(need for wicd)         no
 net-wireless/wpa_supplicant 	yes		yes		(initialize driver)     yes
 net-misc/wicd 			yes		yes		(network manager)       no
-
+slim
 
 # Customized 			Installed?	Configured?	What?                   Forked?
 x11-base/xorg-server 		yes		yes		(startx)                no
@@ -51,7 +51,8 @@ wireshark
 (notepad)
 openssl (ssl)
 (image viewer)
-
+logmein
+vnc(remote)
 
 
 dev-vcs/git			yes		no		(archive)               no
