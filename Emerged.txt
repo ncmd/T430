@@ -24,6 +24,8 @@ slim
 snort
 aide
 ipset
+keychain
+mutt
 
 # Customized 			Installed?	Configured?	What?                   Forked?
 x11-base/xorg-server 		yes		yes		(startx)                no
