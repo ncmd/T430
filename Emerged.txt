@@ -89,7 +89,7 @@ sublime-text
 dev-vcs/git			yes		no		(archive)               no
 net-analyzer/nmap		yes		no		(net scan)              NA
 x11-misc/slock			no		no		(lock)                  no
-
+layman
 
 netbeans			no		
 thunderbird			yes
@@ -100,3 +100,4 @@ thunderbird			yes
 
 #External downloaded
 neovim ebuild
+asciiquarium
