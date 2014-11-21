@@ -21,15 +21,8 @@ app-admin/sudo 			yes		yes		(user root privileges)  yes
 net-misc/dhcpcd 		yes		yes		(need for wicd)         no
 net-wireless/wpa_supplicant 	yes		yes		(initialize driver)     yes
 net-misc/wicd 			yes		yes		(network manager)       no
-slim
-snort
-splunk
-aide
-ipset
-keychain
-mutt
 
-# Customized 			Installed?	Configured?	What?                   Forked?
+# Setup 			Installed?	Configured?	What?                   Forked?
 x11-base/xorg-server 		yes		yes		(startx)                no
 x11-wm/dwm 			yes		yes		(windows manager)       yes
 x11-terms/sakura 		yes		auto		(terminal)              no
@@ -37,24 +30,42 @@ www-client/firefox 		yes		auto		(web browser)           NA
 www-plugins/adobe-flash		yes		auto                                    NA
 www-plugins/nspluginwrapper 	yes		auto		(plugin initializer)    NA
 www-client/chromium 		yes		auto		(web browser)           NA
-sshd
+teamviewer9                     yes             auto            (remote)
+net-irc/irssi			yes		no		(chat)                  no
+java				no		no
+libreoffice                     no
+net-misc/rdesktop 		yes		auto		(win remote desktop)    NA
+
+# Practice
+vsftpd
+nagios
+splunk
+openssl
+splunk
+apache2				yes		no		(webserver)             no
+nginx				yes		no		(http server)        no
+php
+
+
+slim
+snort
+aide
+ipset
+keychain
+mutt
+
 
 # Customized 			Installed?	Configured?	What?                   Forked?
 app-misc/ranger 		yes		auto		(file manager)          no
-net-misc/rdesktop 		yes		auto		(win remote desktop)    NA
+
 net-misc/openvpn 		yes		no		(vpn app)               no
 
-teamviewer9                     yes             auto            (remote)
-net-irc/irssi			yes		no		(chat)                  no
+
 hexchat                         yes             yes             (chat)                  NA
-apache				yes		no		(webserver)             no
-nginx				yes		no		(http server)        no
-php
 roundcube
 mariadb
 monitorix			yes		auto		(system monitor)        NA
-nagios
-java				no		no
+
 autofs
 wireshark
 (pdf viewer)
@@ -79,7 +90,7 @@ dev-vcs/git			yes		no		(archive)               no
 net-analyzer/nmap		yes		no		(net scan)              NA
 x11-misc/slock			no		no		(lock)                  no
 
-libreoffice                     no
+
 netbeans			no		
 thunderbird			yes
 
