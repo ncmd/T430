@@ -37,22 +37,22 @@ libreoffice                     no
 net-misc/rdesktop 		yes		auto		(win remote desktop)    NA
 
 # Practice
-vsftpd
+vsftpd				
 nagios
 splunk
-openssl
+openssl				
 splunk
 apache2				yes		no		(webserver)             no
 nginx				yes		no		(http server)        no
 php
 
 
-slim
+slim				yes
 snort
-aide
+aide				yes
 ipset
-keychain
-mutt
+keychain			yes
+mutt				yes
 
 
 # Customized 			Installed?	Configured?	What?                   Forked?
@@ -67,7 +67,7 @@ mariadb
 monitorix			yes		auto		(system monitor)        NA
 
 autofs
-wireshark
+wireshark			yes
 (pdf viewer)
 (notepad)
 openssl (ssl)
@@ -75,14 +75,14 @@ openssl (ssl)
 logmein
 vnc(remote)
 unrar
-hotot
+hotot				yes
 dolphin
 xscreensaver
-tint2
-nload
-redshift
-xbacklight
-conky
+tint2				yes
+nload				yes
+redshift			yes
+xbacklight			yes
+conky				yes
 sublime-text
 
 
