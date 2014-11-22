@@ -44,6 +44,8 @@ splunk
 openssl				
 samba
 apache2				yes		no		(webserver)             no
+	drupal
+	wordpress
 nginx				yes		no		(http server)        no
 php
 
@@ -62,6 +64,7 @@ app-misc/ranger 		yes		auto		(file manager)          no
 net-misc/openvpn 		yes		no		(vpn app)               no
 
 
+weechat
 hexchat                         yes             yes             (chat)                  NA
 roundcube
 mariadb
