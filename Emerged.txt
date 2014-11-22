@@ -27,6 +27,7 @@ x11-base/xorg-server 		yes		yes		(startx)                no
 x11-wm/dwm 			yes		yes		(windows manager)       yes
 x11-terms/sakura 		yes		auto		(terminal)              no
 www-client/firefox 		yes		auto		(web browser)           NA
+  httprequester addon
 www-plugins/adobe-flash		yes		auto                                    NA
 www-plugins/nspluginwrapper 	yes		auto		(plugin initializer)    NA
 www-client/chromium 		yes		auto		(web browser)           NA
