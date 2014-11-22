@@ -54,7 +54,7 @@ aide				yes
 ipset
 keychain			yes
 mutt				yes
-
+sanatize data
 
 # Customized 			Installed?	Configured?	What?                   Forked?
 app-misc/ranger 		yes		auto		(file manager)          no
