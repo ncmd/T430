@@ -94,7 +94,7 @@ layman
 netbeans			no		
 thunderbird			yes
 
-
+hexedit
 
 
 
