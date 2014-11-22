@@ -41,7 +41,7 @@ vsftpd
 nagios
 splunk
 openssl				
-splunk
+samba
 apache2				yes		no		(webserver)             no
 nginx				yes		no		(http server)        no
 php
@@ -95,7 +95,7 @@ netbeans			no
 thunderbird			yes
 
 hexedit
-
+upower
 
 
 #External downloaded
