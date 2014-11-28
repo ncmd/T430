@@ -89,7 +89,7 @@ xbacklight			yes
 conky				yes
 sublime-text
 munin (monitor system)
-
+emerge --config net-analyzer/munin
 dev-vcs/git			yes		no		(archive)               no
 net-analyzer/nmap		yes		no		(net scan)              NA
 x11-misc/slock			no		no		(lock)                  no
