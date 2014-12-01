@@ -1,6 +1,4 @@
 #dir = /etc/conf.d/net.wlp3s0
 
-config_wlp3s0=("x.x.x.x")
-routes_wlp3s0=("default via x.x.x.x")
 modules="wpa_supplicant"
 wpa_supplicant_wlp3s0=(-iwlwifi)
