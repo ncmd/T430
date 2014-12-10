@@ -1,0 +1,87 @@
+#!/bin/sh
+
+# dwmbar -- Status bar for dwm using xsetroot
+
+DWM_BATT_HLDL=1 # "Hold Light", declares variable for keeping battery warning light on until 75% charged
+
+while true; do
+# Time
+DWM_TIME="$( date '+%a %F %T')"; # YYYY-MM-DD HH:MM:SS
+
+# Volume
+printf -v DWM_VOLUME %3d%% "$(amixer get Master | tail -1 | awk '{ print $5 }' | tr -d '[%]')"; # Volume level, three digits
+if [ "$(amixer get Master | tail -1 | awk '{ print $6 }' | tr -d '[]')" == "off" ]; then # Check if sound is muted
+	DWM_VOLUME="MUTE"; # Display "MUTE" instead of volume
+fi;
+
+# Power status
+# AC light
+if [ "$( cat /sys/class/power_supply/AC/online)" -eq "1" ]; then # Check if AC adapter plugged in
+	DWM_ACLT="AC"; # set "AC Light" on
+else
+	DWM_ACLT="  "; # set "AC Light" off
+fi;
+
+# Charge level
+if [ -e /sys/class/power_supply/BAT0 ]; then # Check if battery connected
+	DWM_CHARGE="$(acpi | awk '{ print $4 }' | tr -d ',%')"; # Declare variable with the current battery charge
+	printf -v DWM_BATTERY %3d%% "$DWM_CHARGE"; # Declare another variable, adds "%" to the end of the charge
+else
+	DWM_BATTERY="----" # "Null" reading for when battery is not present
+fi;
+
+# Charge time
+DWM_BATT_TIME="$(acpi | awk '{ print $5 }')" # Sets variable to current time till depletion/charge
+if [ "$DWM_BATT_TIME" == "discharging" ]; then # A weird glitch causes DWM_BATT_TIME to sometimes get "charging" or "discharging" when
+	DWM_BATT_TIME="dschrgng";	       # removing/connecting AC adapter. "charging" is useful size, "discharging" is too long.
+fi;
+if [ "$DWM_BATT_TIME" == "" ]; then # If battery is fully charged, DWM_BATT_TIME doesn't get anything.
+	DWM_BATT_TIME="battfull"; #putting something there.
+fi;
+
+# Battery status
+if [ -e /sys/class/power_supply/BAT0 ]; then # Check if battery present
+	if [ "$DWM_CHARGE" -le "40" ]; then # if battery drops below 40%
+		DWM_BATT_HLDL="1"; # "Hold light" on
+		# Warning light flasher
+		if [ "$DWM_BATT_SWTC" -eq "0" ]; then # Check if "Warning Light Switch" is off
+			DWM_BATT_LGHT="   $DWM_BATT_TIME   "; # Warning light off, display charge time
+			if [ "$DWM_CHARGE" -le "10" ]; then # Check if battery drops below 10%
+				DWM_BATTERY="!!!!"; # Warning flasher for charge display
+			fi;
+			DWM_BATT_SWTC="1" # Turn light switch on
+		else
+			DWM_BATT_LGHT="CHARGE BATTERY"; # Warning light on
+			DWM_BATT_SWTC="0" # Turn light switch off
+		fi;
+	else
+		if [ "$DWM_BATT_HLDL" -eq "1" ]; then # If Hold Light switch is on (battery had dropped below 40%)
+			if [ "$DWM_CHARGE" -ge "75" ]; then # Check if battery has reached 75%
+				DWM_BATT_HLDL="0" # Turn Hold Light off
+				DWM_BATT_LGHT="   $DWM_BATT_TIME   "; # Warning light off, display charge time
+			else
+				DWM_BATT_HLDL="1" # Keep Hold Light on
+				# Warning light flasher
+				if [ "$DWM_BATT_SWTC" -eq "0" ]; then # Check if light is off
+					DWM_BATT_LGHT="   $DWM_BATT_TIME   "; # Warning light off, display charge time
+					DWM_BATT_SWTC="1" # Turn light switch on
+				else
+					DWM_BATT_LGHT="CHARGE BATTERY"; # Warning light on
+					DWM_BATT_SWTC="0" # Turn light switch off
+				fi;
+			fi;
+		else
+			DWM_BATT_LGHT="   $DWM_BATT_TIME   "; # Display charge time
+		fi;
+	fi;
+else
+	DWM_BATT_LGHT="  No Battery  "; # Display "No Battery" light
+fi;
+
+
+# Status
+# | AC |CHARGE BATTERY|  Pwr:  32%  |  Vol: 100%  |  2014-08-16 21:16:34
+DWM_STATUS="| $DWM_ACLT |$DWM_BATT_LGHT|  Pwr: $DWM_BATTERY  |  Vol: $DWM_VOLUME  |  $DWM_TIME ";
+xsetroot -name "$DWM_STATUS";
+sleep 1s;
+done &
