@@ -105,3 +105,5 @@ upower
 #External downloaded
 neovim ebuild
 asciiquarium
+
+xrandr
